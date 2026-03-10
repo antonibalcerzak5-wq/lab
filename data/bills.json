@@ -1,0 +1,17 @@
+{
+    "bill-1": {
+        "name": "tenant-67",
+        "apartment": "apart-polanka",
+        "room": "room-bigger",
+        "rent_pln": 1500.0,
+        "deposit_pln": 3000.0
+    },
+
+    "bill-2": {
+        "name": "tenant-68",
+        "apartment": "apart-polanka",
+        "room": "room-bigger",
+        "rent_pln": 1500.0,
+        "deposit_pln": 3000.0
+    }
+}

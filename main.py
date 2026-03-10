@@ -8,11 +8,14 @@ class Parameters(BaseModel):
     apartments_json_path: str = 'data/apartments.json'
     tenants_json_path: str = 'data/tenants.json'
     transfers_json_path: str = 'data/transfers.json'
+    bills_json_path: str = 'data/bills.json'
 
 
 class Room(BaseModel):
     name: str
     area_m2: float
+
+
 
 
 class Apartment(BaseModel):
@@ -79,6 +82,8 @@ class Manager:
         self.apartments = Apartment.from_json_file(self.parameters.apartments_json_path)
         self.tenants = Tenant.from_json_file(self.parameters.tenants_json_path)
         self.transfers = Transfer.from_json_file(self.parameters.transfers_json_path)
+
+
 
 if __name__ == '__main__':
     parameters = Parameters()
